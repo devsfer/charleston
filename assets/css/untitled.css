@@ -1,0 +1,24 @@
+@media (min-width:1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+  }
+}
+
+.targetgrid {
+  max-width: 100%;
+}
+
+.bookTrip {
+  max-width: 100%;
+}
+
+#headingMaxwidth {
+  max-width: 100%;
+}
+
