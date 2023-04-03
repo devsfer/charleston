@@ -22,3 +22,295 @@
   max-width: 100%;
 }
 
+#bottomRowBook {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (max-width: 768px) {
+  #bottomRowBook {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+#topRowBook {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+@media (max-width: 768px) {
+  #topRowBook {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+#middleRowBook {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+@media (max-width: 768px) {
+  #middleRowBook {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+#charlestonLarge {
+  text-align: center;
+  font-size: 80px;
+  border-width: 0px;
+  border-right-style: solid;
+  font-family: Lexend, sans-serif;
+}
+
+@media (max-width: 678px) {
+  #charlestonLarge {
+    text-align: center;
+    font-size: 70px;
+    border-width: 0px;
+    border-right-style: solid;
+    font-family: Lexend, sans-serif;
+  }
+}
+
+@media (max-width: 548px) {
+  #charlestonLarge {
+    text-align: center;
+    font-size: 50px;
+    border-width: 0px;
+    border-right-style: solid;
+    font-family: Lexend, sans-serif;
+  }
+}
+
+@media (max-width: 450px) {
+  #charlestonLarge {
+    text-align: center;
+    font-size: 40px;
+    border-width: 0px;
+    border-right-style: solid;
+    font-family: Lexend, sans-serif;
+  }
+}
+
+#charlestonTextLarge {
+  padding: 0px;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 20%;
+  margin-left: 20%;
+  font-size: 20px;
+  font-family: 'Abhaya Libre', serif;
+}
+
+@media (max-width: 420px) {
+  #charlestonTextLarge {
+    padding: 0px;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 16px;
+    font-family: 'Abhaya Libre', serif;
+  }
+}
+
+#gridColumn1 {
+  padding-right: 5px;
+  padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+  #gridColumn1 {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+#gridColumn2 {
+  padding-right: 10px;
+  height: auto;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  #gridColumn2 {
+    padding-right: 20px;
+    height: auto;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+#gridColumn3 {
+  padding-left: 5px;
+}
+
+@media (max-width: 768px) {
+  #gridColumn3 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+#gridColumn4 {
+  padding-right: 5px;
+  height: auto;
+  padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+  #gridColumn4 {
+    padding-right: 20px;
+    height: auto;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+#gridColumn5 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+  #gridColumn5 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+#gridColumn6 {
+  padding-right: 15px;
+  padding-left: 5px;
+}
+
+@media (max-width: 768px) {
+  #gridColumn6 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+#insiderHeading {
+  font-size: 55px;
+  font-family: Lexend, sans-serif;
+}
+
+@media (max-width: 586px) {
+  #insiderHeading {
+    font-size: 45px;
+    font-family: Lexend, sans-serif;
+  }
+}
+
+#experienceHeading {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 568px) {
+  #experienceHeading {
+    font-size: 16px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+  }
+}
+
+#footerNewsletter {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 992px) {
+  #footerNewsletter {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+#foorterCreditsCol {
+}
+
+@media (max-width: 992px) {
+  #foorterCreditsCol {
+    margin-top: 15px;
+  }
+}
+
+#artCardTitle {
+  color: white;
+}
+
+@media (max-width: 410px) {
+  #artCardTitle {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+#artCardParagraph {
+  color: white;
+}
+
+@media (max-width: 410px) {
+  #artCardParagraph {
+    color: white;
+    font-size: 15px;
+  }
+}
+
+#artCardButton {
+  background: black;
+  color: white;
+  border-width: 2px;
+  border-color: black;
+}
+
+#quoteLogo {
+  width: 100%;
+  border-right: 1px solid white;
+  padding-right: 25px;
+}
+
+@media (max-width: 768px) {
+  #quoteLogo {
+    width: 25%;
+    margin-top: 25px;
+  }
+}
+
+#quoteText {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  #quoteText {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 24px;
+  }
+}
+
+#quoteLogo {
+  width: 100%;
+  border-right: 1px solid white;
+  padding-right: 25px;
+}
+
+@media (max-width: 768px) {
+  #quoteLogo {
+    width: 25%;
+    border-right: 1px solid white;
+    padding-right: 25px;
+  }
+}
+
