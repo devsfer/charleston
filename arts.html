@@ -15,20 +15,36 @@
     ml('account', '352302');
 </script>
 <!-- End MailerLite Universal -->
+
+<!-- Intercom AI -->
+<script>
+  window.intercomSettings = {
+    api_base: "https://api-iam.intercom.io",
+    app_id: "g6dq2d0l",
+    name: "<%= current_user.name %>", // Full name
+    email: "<%= current_user.email %>", // Email address
+    created_at: "<%= current_user.created_at.to_i %>" // Signup date as a Unix timestamp
+  };
+</script>
+
+<script>
+// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/g6dq2d0l'
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/g6dq2d0l';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Arts &amp; Culture | Explore Charleston | Charleston, SC</title>
     <meta name="twitter:title" content="Explore the Charm of the Holy City | Explore Charleston | VisitCharlestonSC.org">
-    <meta property="og:image" content="https://VisitCharlestonSC.org/assets/img/Charles CVB/Gaillard_Center_Dusk_1.jpg">
-    <meta name="twitter:image" content="https://VisitCharlestonSC.org/assets/img/Charles CVB/Gaillard_Center_Dusk_1.jpg">
+    <meta property="og:image" content="https://charleston.kelvinorduna.com/assets/img/Charles CVB/Gaillard_Center_Dusk_1.jpg">
+    <meta name="twitter:image" content="https://charleston.kelvinorduna.com/assets/img/Charles CVB/Gaillard_Center_Dusk_1.jpg">
     <meta name="description" content="Immerse yourself in Charleston's rich cultural heritage by exploring its thriving arts scene. From the world-renowned Spoleto Festival to the historic Dock Street Theatre, there's no shortage of artistic inspiration in this charming Southern city.">
     <meta property="og:title" content="Arts &amp; Culture | Explore Charleston | Charleston, SC">
     <meta name="twitter:description" content="Immerse yourself in Charleston's rich cultural heritage by exploring its thriving arts scene. From the world-renowned Spoleto Festival to the historic Dock Street Theatre, there's no shortage of artistic inspiration in this charming Southern city.">
-    <link rel="icon" type="image/png" sizes="600x600" href="assets/img/ExploreCharleston-Favicon.png">
-    <link rel="icon" type="image/png" sizes="600x600" href="assets/img/ExploreCharleston-Favicon.png">
-    <link rel="icon" type="image/png" sizes="600x600" href="assets/img/ExploreCharleston-Favicon.png">
-    <link rel="icon" type="image/png" sizes="600x600" href="assets/img/ExploreCharleston-Favicon.png">
-    <link rel="icon" type="image/png" sizes="600x600" href="assets/img/ExploreCharleston-Favicon.png">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" sizes="600x600" href="/assets/img/ExploreCharleston-Favicon.png">
+    <link rel="icon" type="image/png" sizes="600x600" href="/assets/img/ExploreCharleston-Favicon.png">
+    <link rel="icon" type="image/png" sizes="600x600" href="/assets/img/ExploreCharleston-Favicon.png">
+    <link rel="icon" type="image/png" sizes="600x600" href="/assets/img/ExploreCharleston-Favicon.png">
+    <link rel="icon" type="image/png" sizes="600x600" href="/assets/img/ExploreCharleston-Favicon.png">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap">
@@ -37,31 +53,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Brawler&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Mega&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css">
-    <link rel="stylesheet" href="assets/css/Bold-BS4-Image-Caption-Hover-Effect-5.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark-Multi-Column-icons.css">
+    <link rel="stylesheet" href="/assets/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="/assets/css/Bold-BS4-Image-Caption-Hover-Effect-5.css">
+    <link rel="stylesheet" href="/assets/css/Footer-Dark-Multi-Column-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/Simple-Slider-Simple-Slider.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="/assets/css/Simple-Slider-Simple-Slider.css">
+    <link rel="stylesheet" href="/assets/css/untitled.css">
 </head>
 
 <body>
     <section>
         <nav class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav" style="background: #bed0d1;">
-            <div class="container"><a class="navbar-brand d-flex align-items-center" href="/index.html"><img src="assets/img/explorecharleston_blue.png" style="width: 200px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navcol-1"><a href="play.html" style="color: rgb(0,36,89);font-size: 18px;font-weight: bold;font-family: 'Abhaya Libre', serif;padding: 9px;">Things To Do</a>
+            <div class="container"><a class="navbar-brand d-flex align-items-center" href="/index.html"><img src="/assets/img/explorecharleston_blue.png" style="width: 200px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navcol-1"><a href="/play.html" style="color: rgb(0,36,89);font-size: 18px;font-weight: bold;font-family: 'Abhaya Libre', serif;padding: 9px;">Things To Do</a>
                     <ul class="navbar-nav">
                         <li class="nav-item"></li>
-                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" href="play.html" style="font-family: 'Abhaya Libre', serif;color: rgb(0,36,89);font-size: 18px;font-weight: bold;padding: 9px;height: 45px;width: 67.8203px;">Events</a></li>
-                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" href="eat.html" style="font-family: 'Abhaya Libre', serif;color: rgb(0,36,89);font-size: 18px;font-weight: bold;padding: 9px;">Restaurants</a></li>
-                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" href="stay.html" style="font-family: 'Abhaya Libre', serif;color: rgb(0,36,89);font-size: 18px;font-weight: bold;padding: 9px;">Places to Stay</a></li>
-                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" href="stay.html" style="font-family: 'Abhaya Libre', serif;font-size: 18px;color: rgb(0,36,89);font-weight: bold;padding: 9px;">Plan Your Visit</a></li>
+                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" style="font-family: 'Abhaya Libre', serif;color: rgb(0,36,89);font-size: 18px;font-weight: bold;padding: 9px;height: 45px;width: 67.8203px;" data-target="#redirect_PlanAMeeting" data-toggle="modal">Events</a></li>
+                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" href="/eat.html" style="font-family: 'Abhaya Libre', serif;color: rgb(0,36,89);font-size: 18px;font-weight: bold;padding: 9px;">Restaurants</a></li>
+                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" href="/stay.html" style="font-family: 'Abhaya Libre', serif;color: rgb(0,36,89);font-size: 18px;font-weight: bold;padding: 9px;">Places to Stay</a></li>
+                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" href="/visitor-guide.html" style="font-family: 'Abhaya Libre', serif;font-size: 18px;color: rgb(0,36,89);font-weight: bold;padding: 9px;">Plan Your Visit</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </section>
-    <section class="d-flex d-lg-flex align-items-end justify-content-lg-center align-items-lg-end" style="height: 50vh;background: radial-gradient(rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(&quot;assets/img/Charles%20CVB/Waterfront_Park_Sunrise_1.jpg&quot;) center / cover;">
+    <section class="d-flex d-lg-flex align-items-end justify-content-lg-center align-items-lg-end" style="height: 50vh;background: radial-gradient(rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(&quot;/assets/img/Charles%20CVB/Waterfront_Park_Sunrise_1.jpg&quot;) center / cover;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -73,7 +89,7 @@
     <section class="d-md-flex justify-content-lg-center align-items-lg-center" style="height: auto;background: #002459;">
         <div class="container bookTrip" style="padding-top: 50px;padding-bottom: 50px;">
             <div class="row">
-                <div class="col-md-4 col-lg-3 d-lg-flex justify-content-lg-center align-items-lg-center" style="text-align: center;border-right: 1px solid rgb(235,173,34);">
+                <div class="col-md-4 col-lg-3 d-lg-flex justify-content-lg-center align-items-lg-center" style="text-align: center;border-right: 1px solid rgb(235,173,34) ;">
                     <h1 style="color: #f8f1e0;font-size: 29px;font-family: Alata, sans-serif;"><strong>BOOK YOUR VACATION</strong></h1>
                 </div>
                 <div class="col-md-4 col-lg-2 d-flex d-sm-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-lg-center align-items-lg-center" id="topRowBook">
@@ -117,7 +133,7 @@
                 <div class="col">
                     <div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-2" style="height: 600px;">
                         <div class="carousel-inner h-100">
-                            <div class="carousel-item active h-100" style="background: linear-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2));"><img class="w-100 d-block position-absolute h-100 fit-cover" src="assets/img/carousel-gibbes.jpg" alt="Slide Image" style="z-index: -1;">
+                            <div class="carousel-item active h-100" style="background: linear-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2));"><img class="w-100 d-block position-absolute h-100 fit-cover" src="/assets/img/carousel-gibbes.jpg" alt="Slide Image" style="z-index: -1;">
                                 <div class="container d-flex flex-column justify-content-center h-100">
                                     <div class="row">
                                         <div class="col-md-6 col-xl-4 offset-md-2">
@@ -131,7 +147,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item h-100" style="background: linear-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2));"><img class="w-100 d-block position-absolute h-100 fit-cover" src="assets/img/Other/soundofcharleston.jpg" alt="Slide Image" style="z-index: -1;">
+                            <div class="carousel-item h-100" style="background: linear-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2));"><img class="w-100 d-block position-absolute h-100 fit-cover" src="/assets/img/Other/soundofcharleston.jpg" alt="Slide Image" style="z-index: -1;">
                                 <div class="container d-flex flex-column justify-content-center h-100">
                                     <div class="row">
                                         <div class="col-md-6 col-xl-4 offset-md-2">
@@ -145,7 +161,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item h-100" style="background: linear-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2));"><img class="w-100 d-block position-absolute h-100 fit-cover" src="assets/img/Other/Charleston_7855-scaled.jpg.webp" alt="Slide Image" style="z-index: -1;">
+                            <div class="carousel-item h-100" style="background: linear-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2));"><img class="w-100 d-block position-absolute h-100 fit-cover" src="/assets/img/Other/Charleston_7855-scaled.jpg.webp" alt="Slide Image" style="z-index: -1;">
                                 <div class="container d-flex flex-column justify-content-center h-100">
                                     <div class="row">
                                         <div class="col-md-6 col-xl-4 offset-md-2">
@@ -159,7 +175,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item h-100" style="background: linear-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2));"><img class="w-100 d-block position-absolute h-100 fit-cover" src="assets/img/Charleston_City_Market_2_1__d0ea8b0a-d7f6-4db1-90b6-d412aa114adb.jpg" alt="Slide Image" style="z-index: -1;">
+                            <div class="carousel-item h-100" style="background: linear-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2));"><img class="w-100 d-block position-absolute h-100 fit-cover" src="/assets/img/Charleston_City_Market_2_1__d0ea8b0a-d7f6-4db1-90b6-d412aa114adb.jpg" alt="Slide Image" style="z-index: -1;">
                                 <div class="container d-flex flex-column justify-content-center h-100">
                                     <div class="row">
                                         <div class="col-md-6 col-xl-4 offset-md-2">
@@ -190,7 +206,7 @@
     <section class="d-flex justify-content-lg-center align-items-lg-center" style="height: auto;">
         <div class="container" style="margin-bottom: 30px;">
             <div class="row d-lg-flex justify-content-lg-center" style="background: black;border-radius: 10px;">
-                <div class="col-md-6 col-lg-2 text-center d-lg-flex align-items-lg-center"><img id="quoteLogo" src="assets/img/Other/nytimes-logo-vertical.png"></div>
+                <div class="col-md-6 col-lg-2 text-center d-lg-flex align-items-lg-center"><img id="quoteLogo" src="/assets/img/Other/nytimes-logo-vertical.png"></div>
                 <div class="col-md-6 col-lg-9">
                     <section class="py-4 py-xl-5">
                         <div class="container">
@@ -206,50 +222,50 @@
     <footer>
         <div class="container py-4 py-lg-5" style="color: black;">
             <hr style="border-width: 2px;filter: brightness(41%);">
-            <div class="col-md-12 col-lg-12 offset-lg-0 d-flex justify-content-center" style="padding-right: 0px;padding-left: 0px;"><a href="https://www.meetcharleston.com/event-planning/" style="margin-right: 30PX;color: black;" target="_blank"><strong>MEETING PLANNERS</strong></a><a href="https://www.charlestoncvb.com/media/" style="margin-right: 30PX;color: black;" target="_blank"><strong>PRESS &amp; MEDIA</strong></a><a href="visitor-guide.html" style="margin-right: 0px;color: black;" target="_blank"><strong>VISITOR'S GUIDE</strong></a></div>
+            <div class="col-md-12 col-lg-12 offset-lg-0 d-flex justify-content-center" style="padding-right: 0px;padding-left: 0px;"><a href="https://www.meetcharleston.com/event-planning/" style="margin-right: 30PX;color: black;" target="_blank"><strong>MEETING PLANNERS</strong></a><a href="https://www.charlestoncvb.com/media/" style="margin-right: 30PX;color: black;" target="_blank"><strong>PRESS &amp; MEDIA</strong></a><a href="/visitor-guide.html" style="margin-right: 0px;color: black;" target="_blank"><strong>VISITOR'S GUIDE</strong></a></div>
             <hr>
             <div class="row justify-content-center">
                 <div class="col-sm-4 col-md-3 col-lg-2 text-center text-lg-left d-flex flex-column">
                     <h3 class="font-weight-bold" style="font-size: 1rem;">Things to Do</h3>
                     <ul class="list-unstyled">
-                        <li><a class="text-muted" href="arts.html">Arts &amp; Culture</a></li>
-                        <li><a class="text-muted" href="this-month.html">Aquarium &amp; Parks</a></li>
+                        <li><a class="text-muted" href="/arts.html">Arts &amp; Culture</a></li>
+                        <li><a class="text-muted" href="/this-month.html">Aquarium &amp; Parks</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/itineraries/history-buff/" target="_blank">Historic Sites</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/plan-your-trip/dining-nightlife~124/" target="_blank">Culinary Tours</a></li>
-                        <li><a class="text-muted" href="this-month.html">Festivals/Events</a></li>
+                        <li><a class="text-muted" href="/this-month.html">Festivals/Events</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-3 col-lg-2 text-center text-lg-left d-flex flex-column">
                     <h3 class="font-weight-bold" style="font-size: 1rem;">Explore</h3>
                     <ul class="list-unstyled">
-                        <li><a class="text-muted" href="play.html">Attractions</a></li>
-                        <li><a class="text-muted" href="eat.html">Dining</a></li>
-                        <li><a class="text-muted" href="arts.html">Museums &amp; Galleries</a></li>
+                        <li><a class="text-muted" href="/tours-and-attractions.html">Attractions</a></li>
+                        <li><a class="text-muted" href="/eat.html">Dining</a></li>
+                        <li><a class="text-muted" href="/arts.html">Museums &amp; Galleries</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/plan-your-trip/dining-nightlife~124/" target="_blank">Nightlife</a></li>
-                        <li><a class="text-muted" href="https://www.charlestoncvb.com/plan-your-trip/shopping~205/" target="_blank">Shopping</a></li>
-                        <li><a class="text-muted" href="play.html">Sports</a></li>
-                        <li><a class="text-muted" href="tours-and-attractions.html">Tours</a></li>
+                        <li><a class="text-muted" href="/shopping.html" target="_blank">Shopping</a></li>
+                        <li><a class="text-muted" data-toggle="modal" href="https://www.charlestoncvb.com/plan-your-trip/dining-nightlife~124/">Sports</a></li>
+                        <li><a class="text-muted" href="/tours-and-attractions.html">Tours</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-3 col-lg-2 text-center text-lg-left d-flex flex-column">
                     <h3 class="font-weight-bold" style="font-size: 1rem;">Featured Itineraries</h3>
                     <ul class="list-unstyled">
-                        <li><a class="text-muted" href="blog/first-timers-guide-to-charleston.html" target="_blank">First Timers Guide</a></li>
-                        <li><a class="text-muted" href="blog/soul-of-the-city.html" target="_blank">Soul of The City</a></li>
-                        <li><a class="text-muted" href="blog/romantic-weekend-getaway.html" target="_blank">Romantic Weekend Getaway</a></li>
+                        <li><a class="text-muted" href="/blog/first-timers-guide-to-charleston.html" target="_blank">First Timers Guide</a></li>
+                        <li><a class="text-muted" href="/blog/soul-of-the-city.html" target="_blank">Soul of The City</a></li>
+                        <li><a class="text-muted" href="/blog/romantic-weekend-getaway.html" target="_blank">Romantic Weekend Getaway</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/itineraries/garden-party" target="_blank">Garden Party</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-3 col-lg-2 text-center text-lg-left d-flex flex-column">
                     <h3 class="font-weight-bold" style="font-size: 1rem;">Stay &amp; Plan</h3>
                     <ul class="list-unstyled">
-                        <li><a class="text-muted" href="stay.html">Hotels</a></li>
+                        <li><a class="text-muted" href="/stay.html">Hotels</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/travel-support/parking/" target="_blank">Parking in Charleston</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/plan-your-trip/transportation~211/" target="_blank">Transportation</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/travel-support/weather/" target="_blank">Weather</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/travel-support/visitors-centers/" target="_blank">Visitor Centers</a></li>
-                        <li><a class="text-muted" href="visitor-guide.html" target="_blank">Official Vistors Guide</a></li>
-                        <li><a class="text-muted" href="https://www.charlestoncvb.com/map/" target="_blank">Official Vistors Map</a></li>
+                        <li><a class="text-muted" href="/visitor-guide.html" target="_blank">Official Visitors Guide</a></li>
+                        <li><a class="text-muted" href="https://www.charlestoncvb.com/map/" target="_blank">Official Visitors Map</a></li>
                         <li></li>
                     </ul>
                 </div>
@@ -263,8 +279,8 @@
     <footer style="background: white;color: rgb(255,255,255);">
         <div class="container text-center py-4">
             <div class="row row-cols-1 row-cols-lg-3">
-                <div class="col d-lg-flex justify-content-lg-center align-items-lg-center" style="color: white;"><a href="/index.html"><img src="assets/img/explorecharleston_blue.png" style="width: 80%;"></a></div>
-                <div class="col">
+                <div class="col d-lg-flex justify-content-lg-center align-items-lg-center" style="color: white;"><a href="/index.html"><img src="/assets/img/explorecharleston_blue.png" style="width: 80%;"></a></div>
+                <div class="col"><a href="/legal/terms.html" style="padding-right: 10px;border-width: 2px;border-right: 1px solid rgb(0,0,0);color: rgb(108,117,125);">Terms and Conditions</a><a href="https://static.visitcharlestonsc.org/assets/legal/privacy-policy-june-2023.pdf" style="padding-left: 10px;border-left: 1px solid black;color: rgb(108,117,125);">Privacy Policy</a>
                     <ul class="list-inline my-2">
                         <li class="list-inline-item"><a href="https://www.facebook.com/explorecharleston" target="_blank">
                                 <div class="bs-icon-sm bs-icon-circle bs-icon-primary bs-icon" style="background: rgb(2,45,85);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
@@ -293,16 +309,16 @@
                             </a></li>
                     </ul>
                 </div>
-                <div class="col d-lg-flex justify-content-lg-center align-items-lg-center" id="foorterCreditsCol"><a class="btn btn-primary" role="button" style="width: 30%;background: rgb(5,45,85);color: white;border-radius: 16px;border-width: 0px;" href="credits.html"><strong>Credits</strong></a></div>
+                <div class="col d-lg-flex justify-content-lg-center align-items-lg-center" id="foorterCreditsCol"><a class="btn btn-primary" role="button" style="width: 30%;background: rgb(5,45,85);color: white;border-radius: 16px;border-width: 0px;" href="/credits.html"><strong>Credits</strong></a></div>
             </div>
         </div>
     </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/hilton-partner.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bs-init.js"></script>
+    <script src="/assets/js/hilton-partner.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="assets/js/Simple-Slider.js"></script>
+    <script src="/assets/js/Simple-Slider.js"></script>
 </body>
 
 </html>

@@ -15,20 +15,44 @@
     ml('account', '352302');
 </script>
 <!-- End MailerLite Universal -->
+
+<!-- Intercom AI -->
+<script>
+  window.intercomSettings = {
+    api_base: "https://api-iam.intercom.io",
+    app_id: "g6dq2d0l",
+    name: "<%= current_user.name %>", // Full name
+    email: "<%= current_user.email %>", // Email address
+    created_at: "<%= current_user.created_at.to_i %>" // Signup date as a Unix timestamp
+  };
+</script>
+
+<script>
+// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/g6dq2d0l'
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/g6dq2d0l';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Explore Charleston | Charleston, SC</title>
     <meta name="twitter:title" content="Explore the Charm of the Holy City | Explore Charleston | VisitCharlestonSC.org">
     <meta name="twitter:description" content="Plan your perfect getaway to the charming Southern city of Charleston with VisitCharlestonSC.Org. Discover the best places to stay, eat, play, and experience the rich cultural heritage of this historic city. Start planning your trip today! #VisitCharlestonSC #ExploreCharleston #TravelGuide">
-    <meta property="og:image" content="https://VisitCharlestonSC.org/assets/img/Charles CVB/Gaillard_Center_Dusk_1.jpg">
+    <meta property="og:image" content="https://charleston.kelvinorduna.com/assets/img/Charles CVB/Gaillard_Center_Dusk_1.jpg">
     <meta property="og:title" content="Explore Charleston | Charleston, SC">
-    <meta name="twitter:image" content="https://VisitCharlestonSC.org/assets/img/Charles CVB/Gaillard_Center_Dusk_1.jpg">
+    <meta name="twitter:image" content="https://charleston.kelvinorduna.com/assets/img/Charles CVB/Gaillard_Center_Dusk_1.jpg">
     <meta name="description" content="Immerse yourself in the rich culture and history of Charleston, South Carolina. From its picturesque cobblestone streets to its world-renowned cuisine, there's something for everyone in Charleston. Discover historic landmarks like Fort Sumter and the Magnolia Plantation, stroll along the stunning beaches, and indulge in delicious Lowcountry cuisine.">
-    <link rel="icon" type="image/png" sizes="600x600" href="assets/img/ExploreCharleston-Favicon.png">
-    <link rel="icon" type="image/png" sizes="600x600" href="assets/img/ExploreCharleston-Favicon.png">
-    <link rel="icon" type="image/png" sizes="600x600" href="assets/img/ExploreCharleston-Favicon.png">
-    <link rel="icon" type="image/png" sizes="600x600" href="assets/img/ExploreCharleston-Favicon.png">
-    <link rel="icon" type="image/png" sizes="600x600" href="assets/img/ExploreCharleston-Favicon.png">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Charleston Tourism A",
+            "url": "https://charleston.kelvinorduna.com"
+        }
+    </script>
+    <link rel="icon" type="image/png" sizes="600x600" href="/assets/img/ExploreCharleston-Favicon.png">
+    <link rel="icon" type="image/png" sizes="600x600" href="/assets/img/ExploreCharleston-Favicon.png">
+    <link rel="icon" type="image/png" sizes="600x600" href="/assets/img/ExploreCharleston-Favicon.png">
+    <link rel="icon" type="image/png" sizes="600x600" href="/assets/img/ExploreCharleston-Favicon.png">
+    <link rel="icon" type="image/png" sizes="600x600" href="/assets/img/ExploreCharleston-Favicon.png">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap">
@@ -37,31 +61,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Brawler&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Mega&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css">
-    <link rel="stylesheet" href="assets/css/Bold-BS4-Image-Caption-Hover-Effect-5.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark-Multi-Column-icons.css">
+    <link rel="stylesheet" href="/assets/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="/assets/css/Bold-BS4-Image-Caption-Hover-Effect-5.css">
+    <link rel="stylesheet" href="/assets/css/Footer-Dark-Multi-Column-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/Simple-Slider-Simple-Slider.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="/assets/css/Simple-Slider-Simple-Slider.css">
+    <link rel="stylesheet" href="/assets/css/untitled.css">
 </head>
 
 <body>
     <section>
         <nav class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav" style="background: #bed0d1;">
-            <div class="container"><a class="navbar-brand d-flex align-items-center" href="/index.html"><img src="assets/img/explorecharleston_blue.png" style="width: 200px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navcol-1"><a href="play.html" style="color: rgb(0,36,89);font-size: 18px;font-weight: bold;font-family: 'Abhaya Libre', serif;padding: 9px;">Things To Do</a>
+            <div class="container"><a class="navbar-brand d-flex align-items-center" href="/index.html"><img src="/assets/img/explorecharleston_blue.png" style="width: 200px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navcol-1"><a href="/play.html" style="color: rgb(0,36,89);font-size: 18px;font-weight: bold;font-family: 'Abhaya Libre', serif;padding: 9px;">Things To Do</a>
                     <ul class="navbar-nav">
                         <li class="nav-item"></li>
-                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" href="play.html" style="font-family: 'Abhaya Libre', serif;color: rgb(0,36,89);font-size: 18px;font-weight: bold;padding: 9px;height: 45px;width: 67.8203px;">Events</a></li>
-                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" href="eat.html" style="font-family: 'Abhaya Libre', serif;color: rgb(0,36,89);font-size: 18px;font-weight: bold;padding: 9px;">Restaurants</a></li>
-                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" href="stay.html" style="font-family: 'Abhaya Libre', serif;color: rgb(0,36,89);font-size: 18px;font-weight: bold;padding: 9px;">Places to Stay</a></li>
-                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" href="stay.html" style="font-family: 'Abhaya Libre', serif;font-size: 18px;color: rgb(0,36,89);font-weight: bold;padding: 9px;">Plan Your Visit</a></li>
+                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" style="font-family: 'Abhaya Libre', serif;color: rgb(0,36,89);font-size: 18px;font-weight: bold;padding: 9px;height: 45px;width: 67.8203px;" data-target="#redirect_PlanAMeeting" data-toggle="modal">Events</a></li>
+                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" href="/eat.html" style="font-family: 'Abhaya Libre', serif;color: rgb(0,36,89);font-size: 18px;font-weight: bold;padding: 9px;">Restaurants</a></li>
+                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" href="/stay.html" style="font-family: 'Abhaya Libre', serif;color: rgb(0,36,89);font-size: 18px;font-weight: bold;padding: 9px;">Places to Stay</a></li>
+                        <li class="nav-item" style="font-family: Lexend, sans-serif;"><a class="nav-link active" href="/visitor-guide.html" style="font-family: 'Abhaya Libre', serif;font-size: 18px;color: rgb(0,36,89);font-weight: bold;padding: 9px;">Plan Your Visit</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </section>
-    <section class="d-flex d-md-flex align-items-end align-items-md-end align-items-lg-end" style="height: 80vh;background: url(&quot;assets/img/Charles%20CVB/Gaillard_Center_Dusk_1.jpg&quot;) center / cover no-repeat;">
+    <section class="d-flex d-md-flex align-items-end align-items-md-end align-items-lg-end" style="height: 80vh;background: url(&quot;/assets/img/Charles%20CVB/Gaillard_Center_Dusk_1.jpg&quot;) center / cover no-repeat;">
         <div class="container flexGrid" id="flexGrid">
             <div class="row">
                 <div class="col-8 col-sm-5 col-md-4 col-lg-3">
@@ -73,7 +97,7 @@
     <section class="d-md-flex justify-content-lg-center align-items-lg-center" style="height: auto;background: #002459;">
         <div class="container bookTrip" style="padding-top: 50px;padding-bottom: 50px;">
             <div class="row">
-                <div class="col-md-4 col-lg-3 d-lg-flex justify-content-lg-center align-items-lg-center" style="text-align: center;border-right: 1px solid rgb(235,173,34);">
+                <div class="col-md-4 col-lg-3 d-lg-flex justify-content-lg-center align-items-lg-center" style="text-align: center;border-right: 1px solid rgb(235,173,34) ;">
                     <h1 style="color: #f8f1e0;font-size: 29px;font-family: Alata, sans-serif;"><strong>BOOK YOUR VACATION</strong></h1>
                 </div>
                 <div class="col-md-4 col-lg-2 d-flex d-sm-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-lg-center align-items-lg-center" id="topRowBook">
@@ -123,8 +147,8 @@
     <section class="d-flex justify-content-center align-items-center" style="height: auto;background: #fffdf3;">
         <div class="container targetgrid" style="margin-bottom: 30px;">
             <div class="row d-md-flex justify-content-md-center" style="margin-bottom: 5px;">
-                <div class="col-md-3 col-lg-6" id="gridColumn1"><a href="stay.html">
-                        <div class="hover hover-5 text-white rounded" style="height: 100%;"><img src="assets/img/Charles%20CVB/Rainbow_Row_1.jpg" alt="image" width="450" height="338" style="height: 100%;">
+                <div class="col-md-3 col-lg-6" id="gridColumn1"><a href="/stay.html">
+                        <div class="hover hover-5 text-white rounded" style="height: 100%;"><img src="/assets/img/Charles%20CVB/Rainbow_Row_1.jpg" alt="image" width="450" height="338" style="height: 100%;">
                             <div class="hover-overlay"></div>
                             <div class="hover-5-content">
                                 <h2 class="text-uppercase hover-5-title font-weight-light mb-0" style="font-weight: bold;"><strong class="font-weight-bold text-white">Stay&nbsp;</strong><span class="font-weight-light"><strong>In Charleston</strong></span>&nbsp;</h2>
@@ -132,8 +156,8 @@
                             </div>
                         </div>
                     </a></div>
-                <div class="col-md-3 col-lg-3" id="gridColumn2"><a href="eat.html">
-                        <div class="hover hover-5 text-white rounded" style="height: 50%;margin-bottom: 10px;"><img src="assets/img/Charles%20CVB/Taste_of_the_South_2_1.jpg" alt="image" width="100%" height="100%">
+                <div class="col-md-3 col-lg-3" id="gridColumn2"><a href="/eat.html">
+                        <div class="hover hover-5 text-white rounded" style="height: 50%;margin-bottom: 10px;"><img src="/assets/img/Charles%20CVB/Taste_of_the_South_2_1.jpg" alt="image" width="100%" height="100%">
                             <div class="hover-overlay"></div>
                             <div class="hover-5-content">
                                 <h2 class="text-uppercase hover-5-title font-weight-light mb-0" style="font-weight: bold;"><strong class="font-weight-bold text-white">Eat&nbsp;</strong><span class="font-weight-light"><strong>In Charleston</strong></span>&nbsp;</h2>
@@ -141,7 +165,7 @@
                             </div>
                         </div>
                     </a>
-                    <div class="hover hover-5 text-white rounded" style="height: 48%;margin-top: 0px;"><a href="visitor-guide.html">Link<img src="assets/img/Charles%20CVB/Saint_Philips_1.jpg" alt="image" width="100%" height="100%">
+                    <div class="hover hover-5 text-white rounded" style="height: 48%;margin-top: 0px;"><a href="/visitor-guide.html">Link<img src="/assets/img/Charles%20CVB/Saint_Philips_1.jpg" alt="image" width="100%" height="100%">
                             <div class="hover-overlay"></div>
                         </a>
                         <div class="hover-5-content">
@@ -150,8 +174,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-lg-3" id="gridColumn3"><a href="play.html">
-                        <div class="hover hover-5 text-white rounded" style="height: 100%;"><img src="assets/img/Charles%20CVB/playincharleston.png" alt="image" width="100%" height="100%" style="height: 100%;">
+                <div class="col-md-3 col-lg-3" id="gridColumn3"><a href="/play.html">
+                        <div class="hover hover-5 text-white rounded" style="height: 100%;"><img src="/assets/img/Charles%20CVB/playincharleston.png" alt="image" width="100%" height="100%" style="height: 100%;">
                             <div class="hover-overlay"></div>
                             <div class="hover-5-content">
                                 <h2 class="text-uppercase hover-5-title font-weight-light mb-0" style="font-weight: bold;"><strong class="font-weight-bold text-white">Play&nbsp;</strong><span class="font-weight-light"><strong>In Charleston</strong></span>&nbsp;</h2>
@@ -162,15 +186,15 @@
             </div>
             <div class="row d-md-flex justify-content-md-center" style="margin-top: 10px;">
                 <div class="col-md-3 col-lg-3" id="gridColumn4"><a href="https://www.charlestoncvb.com/itineraries/history-buff/" target="_blank">
-                        <div class="hover hover-5 text-white rounded" style="height: 50%;margin-bottom: 10px;"><img src="assets/img/Other/downtown-charleston.jpeg" alt="image" width="100%" height="100%">
+                        <div class="hover hover-5 text-white rounded" style="height: 50%;margin-bottom: 10px;"><img src="/assets/img/Other/downtown-charleston.jpeg" alt="image" width="100%" height="100%">
                             <div class="hover-overlay"></div>
                             <div class="hover-5-content">
                                 <h2 class="text-uppercase hover-5-title font-weight-light mb-0" style="font-weight: bold;"><strong class="font-weight-bold text-white">History&nbsp;</strong><span class="font-weight-light"><strong>of Charleston</strong></span>&nbsp;</h2>
                                 <p class="hover-5-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             </div>
                         </div>
-                    </a><a href="this-month.html">
-                        <div class="hover hover-5 text-white rounded" style="height: 48%;margin-top: 0px;"><img src="assets/img/Charles%20CVB/Charleston_City_Market.jpg" alt="image" width="100%" height="100%">
+                    </a><a href="/this-month.html">
+                        <div class="hover hover-5 text-white rounded" style="height: 48%;margin-top: 0px;"><img src="/assets/img/Charles%20CVB/Charleston_City_Market.jpg" alt="image" width="100%" height="100%">
                             <div class="hover-overlay"></div>
                             <div class="hover-5-content">
                                 <h2 class="text-uppercase hover-5-title font-weight-light mb-0" style="font-weight: bold;"><strong class="font-weight-bold text-white">This month</strong><span class="font-weight-light">&nbsp;In Charleston</span>&nbsp;</h2>
@@ -179,7 +203,7 @@
                         </div>
                     </a></div>
                 <div class="col-md-3 col-lg-3" id="gridColumn5"><a href="https://www.charlestoncvb.com/plan-your-trip/transportation~211/" target="_blank">
-                        <div class="hover hover-5 text-white rounded" style="height: 100%;"><img src="assets/img/Other/getting-around.jpg" alt="image" width="100%" height="100%" style="height: 100%;">
+                        <div class="hover hover-5 text-white rounded" style="height: 100%;"><img src="/assets/img/Other/getting-around.jpg" alt="image" width="100%" height="100%" style="height: 100%;">
                             <div class="hover-overlay"></div>
                             <div class="hover-5-content">
                                 <h2 class="text-uppercase hover-5-title font-weight-light mb-0" style="font-weight: bold;"><strong class="font-weight-bold text-white">getting around&nbsp;</strong><span class="font-weight-light"><strong>Charleston</strong></span>&nbsp;</h2>
@@ -187,8 +211,8 @@
                             </div>
                         </div>
                     </a></div>
-                <div class="col-md-3 col-lg-6" id="gridColumn6"><a href="arts.html">
-                        <div class="hover hover-5 text-white rounded" style="height: 100%;"><img src="assets/img/Charles%20CVB/Waterfront_Park_Sunrise_1.jpg" alt="image" width="100%" height="100%" style="height: 100%;">
+                <div class="col-md-3 col-lg-6" id="gridColumn6"><a href="/arts.html">
+                        <div class="hover hover-5 text-white rounded" style="height: 100%;"><img src="/assets/img/Charles%20CVB/Waterfront_Park_Sunrise_1.jpg" alt="image" width="100%" height="100%" style="height: 100%;">
                             <div class="hover-overlay"></div>
                             <div class="hover-5-content">
                                 <h2 class="text-uppercase hover-5-title font-weight-light mb-0" style="font-weight: bold;"><strong class="font-weight-bold text-white">ARt&nbsp;</strong><span class="font-weight-light"><strong>In Charleston</strong></span>&nbsp;</h2>
@@ -215,22 +239,22 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="card-group">
-                                    <div class="card" style="border-width: 0px;margin-right: 20px;margin-bottom: 50px;"><img class="card-img-top w-100 d-block" src="assets/img/Charles%20CVB/Outdoor_Culinary_Experience_1.jpg">
+                                    <div class="card" style="border-width: 0px;margin-right: 20px;margin-bottom: 50px;"><img class="card-img-top w-100 d-block" src="/assets/img/Charles%20CVB/Outdoor_Culinary_Experience_1.jpg">
                                         <div class="card-body" style="padding: 0px;margin-top: 5px;">
                                             <h4 class="card-title" id="experienceHeading" style="margin-bottom: 6px;"><strong>First Timers Guide</strong></h4>
-                                            <p class="card-text" style="font-family: Brawler, serif;">Charleston offers a wide range of captivating accommodations that cater to every traveler, regardless of their preferred vacation style, travel party size, or desired itinerary. You may find yourself wanting to extend your stay once you arrive.</p><a class="btn btn-primary" role="button" style="color: rgb(250,252,252);background: rgb(5,45,85);border-radius: 0;border-color: rgb(5,45,85);" href="blog/first-timers-guide-to-charleston.html" target="_blank"><strong>READ MORE</strong></a>
+                                            <p class="card-text" style="font-family: Brawler, serif;">Charleston offers a wide range of captivating accommodations that cater to every traveler, regardless of their preferred vacation style, travel party size, or desired itinerary. You may find yourself wanting to extend your stay once you arrive.</p><a class="btn btn-primary" role="button" style="color: rgb(250,252,252);background: rgb(5,45,85);border-radius: 0;border-color: rgb(5,45,85);" href="/blog/first-timers-guide-to-charleston.html" target="_blank"><strong>READ MORE</strong></a>
                                         </div>
                                     </div>
-                                    <div class="card" style="border-width: 0px;margin-right: 20px;"><img class="card-img-top w-100 d-block" src="assets/img/Charles%20CVB/Saint_Philips_1.jpg">
+                                    <div class="card" style="border-width: 0px;margin-right: 20px;"><img class="card-img-top w-100 d-block" src="/assets/img/Charles%20CVB/Saint_Philips_1.jpg">
                                         <div class="card-body" style="padding: 0px;margin-top: 5px;">
                                             <h4 class="card-title" id="experienceHeading" style="font-size: 16px;margin-bottom: 6px;"><strong>Soul of the City</strong></h4>
-                                            <p class="card-text">Uncover the impactful presence of Black history in Charleston, from the rich taste of Lowcountry cuisine to the intricate artistry in handcrafted sweetgrass baskets,&nbsp;you'll find a celebration of the African American community in every aspect of the city</p><a class="btn btn-primary" role="button" style="background: rgb(0,36,89);border-radius: 0px;border-width: 0px;" href="blog/soul-of-the-city.html" target="_blank"><strong>READ MORE</strong></a>
+                                            <p class="card-text" style="font-family: Brawler, serif;">Uncover the impactful presence of Black history in Charleston, from the rich taste of Lowcountry cuisine to the intricate artistry in handcrafted sweetgrass baskets,&nbsp;you'll find a celebration of the African American community in every aspect of the city</p><a class="btn btn-primary" role="button" style="background: rgb(0,36,89);border-radius: 0px;border-width: 0px;" href="/blog/soul-of-the-city.html" target="_blank"><strong>READ MORE</strong></a>
                                         </div>
                                     </div>
-                                    <div class="card" style="border-width: 0px;"><img class="card-img-top w-100 d-block" src="assets/img/Charles%20CVB/fountain-charleston.png">
+                                    <div class="card" style="border-width: 0px;"><img class="card-img-top w-100 d-block" src="/assets/img/Charles%20CVB/fountain-charleston.png">
                                         <div class="card-body" style="padding: 0px;margin-top: 5px;">
                                             <h4 class="card-title" id="experienceHeading"><strong>Romantic Weekend Getaway</strong></h4>
-                                            <p class="card-text">Start your romantic weekend getaway in Charleston on a sophisticated note with a glass of champagne upon arrival at the stylish and elegant Zero George. Hop on Zero George'ss complimentary bicycles and cruise through the Holy City’s charming streets</p><a class="btn btn-primary" role="button" style="background: rgb(0,36,89);border-radius: 0px;border-width: 0px;" href="blog/romantic-weekend-getaway.html" target="_blank"><strong>READ MORE</strong></a>
+                                            <p class="card-text" style="font-family: Brawler, serif;">Start your romantic weekend getaway in Charleston on a sophisticated note with a glass of champagne upon arrival at the stylish and elegant Zero George. Hop on Zero George'ss complimentary bicycles and cruise through the Holy City’s charming streets</p><a class="btn btn-primary" role="button" style="background: rgb(0,36,89);border-radius: 0px;border-width: 0px;" href="/blog/romantic-weekend-getaway.html" target="_blank"><strong>READ MORE</strong></a>
                                         </div>
                                     </div>
                                 </div>
@@ -252,22 +276,22 @@
                     <div class="col-md-6">
                         <div class="text-white p-4 p-md-5">
                             <h2 class="font-weight-bold text-white mb-3" style="font-family: Lexend, sans-serif;">Explore the<br>Holy City</h2>
-                            <p class="mb-4" style="font-family: Lexend, sans-serif;">Is this your first time? Plan your route to getting to the Holy City.</p><a class="btn btn-primary btn-lg mr-2" role="button" href="https://goo.gl/maps/JP559RLksF7GtJ1N6" style="font-size: 18px;background: rgb(5,45,85);border-width: 0px;" target="_blank"><strong>TAKE ME TO CHARLESTON</strong></a>
+                            <p class="mb-4" style="font-family: Lexend, sans-serif;">Is this your first time? Plan your route to getting to the Holy City.</p><a class="btn btn-primary btn-lg mr-2" role="button" style="font-size: 18px;background: rgb(5,45,85);border-width: 0px;" target="_blank" data-target="#redirect_directions" data-toggle="modal"><strong>TAKE ME TO CHARLESTON</strong></a>
                         </div>
                     </div>
-                    <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-cover" src="assets/img/Charles%20CVB/Charleston_Beach_Resorts_Golf_1.jpg"></div>
+                    <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-cover" src="/assets/img/Charles%20CVB/Charleston_Beach_Resorts_Golf_1.jpg"></div>
                 </div>
             </div>
         </div>
     </section>
     <section style="height: 50vh;">
-        <div data-bss-parallax-bg="true" style="background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)), url(&quot;assets/img/Charles%20CVB/Outdoor_Culinary_Experience_1.jpg&quot;) top / cover;height: 50vh;background-size: auto, cover;">
+        <div data-bss-parallax-bg="true" style="background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)), url(&quot;/assets/img/Charles%20CVB/Outdoor_Culinary_Experience_1.jpg&quot;) top / cover;height: 50vh;background-size: auto, cover;">
             <div class="container h-100">
                 <div class="row h-100">
                     <div class="col-md-6 col-lg-7 text-center text-md-left d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center align-items-lg-end justify-content-xl-center" style="margin-bottom: 45px;color: white;">
                         <div id="headingMaxwidth">
                             <h1 class="text-uppercase font-weight-bold">Events &amp; meetings</h1>
-                            <p class="my-3">Whatever type of event you're planning, Charleston has what you need to make your experience a memorable one. <a href="https://www.meetcharleston.com/event-planning/" style="color: #0075ff;border-color: #000000;" target="_blank"><strong>Plan Your Meeting Today.</strong></a></p>
+                            <p class="my-3">Whatever type of event you're planning, Charleston has what you need to make your experience a memorable one. <a style="color: #0075ff;border-color: #000000;" target="_blank" data-target="#redirect_PlanAMeeting" data-toggle="modal"><strong>Plan Your Meeting Today.</strong></a></p>
                         </div>
                     </div>
                 </div>
@@ -287,50 +311,50 @@
     <footer>
         <div class="container py-4 py-lg-5" style="color: black;">
             <hr style="border-width: 2px;filter: brightness(41%);">
-            <div class="col-md-12 col-lg-12 offset-lg-0 d-flex justify-content-center" style="padding-right: 0px;padding-left: 0px;"><a href="https://www.meetcharleston.com/event-planning/" style="margin-right: 30PX;color: black;" target="_blank"><strong>MEETING PLANNERS</strong></a><a href="https://www.charlestoncvb.com/media/" style="margin-right: 30PX;color: black;" target="_blank"><strong>PRESS &amp; MEDIA</strong></a><a href="visitor-guide.html" style="margin-right: 0px;color: black;" target="_blank"><strong>VISITOR'S GUIDE</strong></a></div>
+            <div class="col-md-12 col-lg-12 offset-lg-0 d-flex justify-content-center" style="padding-right: 0px;padding-left: 0px;"><a href="https://www.meetcharleston.com/event-planning/" style="margin-right: 30PX;color: black;" target="_blank"><strong>MEETING PLANNERS</strong></a><a href="https://www.charlestoncvb.com/media/" style="margin-right: 30PX;color: black;" target="_blank"><strong>PRESS &amp; MEDIA</strong></a><a href="/visitor-guide.html" style="margin-right: 0px;color: black;" target="_blank"><strong>VISITOR'S GUIDE</strong></a></div>
             <hr>
             <div class="row justify-content-center">
                 <div class="col-sm-4 col-md-3 col-lg-2 text-center text-lg-left d-flex flex-column">
                     <h3 class="font-weight-bold" style="font-size: 1rem;">Things to Do</h3>
                     <ul class="list-unstyled">
-                        <li><a class="text-muted" href="arts.html">Arts &amp; Culture</a></li>
-                        <li><a class="text-muted" href="this-month.html">Aquarium &amp; Parks</a></li>
+                        <li><a class="text-muted" href="/arts.html">Arts &amp; Culture</a></li>
+                        <li><a class="text-muted" href="/this-month.html">Aquarium &amp; Parks</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/itineraries/history-buff/" target="_blank">Historic Sites</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/plan-your-trip/dining-nightlife~124/" target="_blank">Culinary Tours</a></li>
-                        <li><a class="text-muted" href="this-month.html">Festivals/Events</a></li>
+                        <li><a class="text-muted" href="/this-month.html">Festivals/Events</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-3 col-lg-2 text-center text-lg-left d-flex flex-column">
                     <h3 class="font-weight-bold" style="font-size: 1rem;">Explore</h3>
                     <ul class="list-unstyled">
-                        <li><a class="text-muted" href="play.html">Attractions</a></li>
-                        <li><a class="text-muted" href="eat.html">Dining</a></li>
-                        <li><a class="text-muted" href="arts.html">Museums &amp; Galleries</a></li>
+                        <li><a class="text-muted" href="/tours-and-attractions.html">Attractions</a></li>
+                        <li><a class="text-muted" href="/eat.html">Dining</a></li>
+                        <li><a class="text-muted" href="/arts.html">Museums &amp; Galleries</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/plan-your-trip/dining-nightlife~124/" target="_blank">Nightlife</a></li>
-                        <li><a class="text-muted" href="https://www.charlestoncvb.com/plan-your-trip/shopping~205/" target="_blank">Shopping</a></li>
-                        <li><a class="text-muted" href="play.html">Sports</a></li>
-                        <li><a class="text-muted" href="tours-and-attractions.html">Tours</a></li>
+                        <li><a class="text-muted" href="/shopping.html" target="_blank">Shopping</a></li>
+                        <li><a class="text-muted" data-toggle="modal" href="https://www.charlestoncvb.com/plan-your-trip/dining-nightlife~124/">Sports</a></li>
+                        <li><a class="text-muted" href="/tours-and-attractions.html">Tours</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-3 col-lg-2 text-center text-lg-left d-flex flex-column">
                     <h3 class="font-weight-bold" style="font-size: 1rem;">Featured Itineraries</h3>
                     <ul class="list-unstyled">
-                        <li><a class="text-muted" href="blog/first-timers-guide-to-charleston.html" target="_blank">First Timers Guide</a></li>
-                        <li><a class="text-muted" href="blog/soul-of-the-city.html" target="_blank">Soul of The City</a></li>
-                        <li><a class="text-muted" href="blog/romantic-weekend-getaway.html" target="_blank">Romantic Weekend Getaway</a></li>
+                        <li><a class="text-muted" href="/blog/first-timers-guide-to-charleston.html" target="_blank">First Timers Guide</a></li>
+                        <li><a class="text-muted" href="/blog/soul-of-the-city.html" target="_blank">Soul of The City</a></li>
+                        <li><a class="text-muted" href="/blog/romantic-weekend-getaway.html" target="_blank">Romantic Weekend Getaway</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/itineraries/garden-party" target="_blank">Garden Party</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-3 col-lg-2 text-center text-lg-left d-flex flex-column">
                     <h3 class="font-weight-bold" style="font-size: 1rem;">Stay &amp; Plan</h3>
                     <ul class="list-unstyled">
-                        <li><a class="text-muted" href="stay.html">Hotels</a></li>
+                        <li><a class="text-muted" href="/stay.html">Hotels</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/travel-support/parking/" target="_blank">Parking in Charleston</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/plan-your-trip/transportation~211/" target="_blank">Transportation</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/travel-support/weather/" target="_blank">Weather</a></li>
                         <li><a class="text-muted" href="https://www.charlestoncvb.com/travel-support/visitors-centers/" target="_blank">Visitor Centers</a></li>
-                        <li><a class="text-muted" href="visitor-guide.html" target="_blank">Official Vistors Guide</a></li>
-                        <li><a class="text-muted" href="https://www.charlestoncvb.com/map/" target="_blank">Official Vistors Map</a></li>
+                        <li><a class="text-muted" href="/visitor-guide.html" target="_blank">Official Visitors Guide</a></li>
+                        <li><a class="text-muted" href="https://www.charlestoncvb.com/map/" target="_blank">Official Visitors Map</a></li>
                         <li></li>
                     </ul>
                 </div>
@@ -344,8 +368,8 @@
     <footer style="background: white;color: rgb(255,255,255);">
         <div class="container text-center py-4">
             <div class="row row-cols-1 row-cols-lg-3">
-                <div class="col d-lg-flex justify-content-lg-center align-items-lg-center" style="color: white;"><a href="/index.html"><img src="assets/img/explorecharleston_blue.png" style="width: 80%;"></a></div>
-                <div class="col">
+                <div class="col d-lg-flex justify-content-lg-center align-items-lg-center" style="color: white;"><a href="/index.html"><img src="/assets/img/explorecharleston_blue.png" style="width: 80%;"></a></div>
+                <div class="col"><a href="/legal/terms.html" style="padding-right: 10px;border-width: 2px;border-right: 1px solid rgb(0,0,0);color: rgb(108,117,125);">Terms and Conditions</a><a href="https://static.visitcharlestonsc.org/assets/legal/privacy-policy-june-2023.pdf" style="padding-left: 10px;border-left: 1px solid black;color: rgb(108,117,125);">Privacy Policy</a>
                     <ul class="list-inline my-2">
                         <li class="list-inline-item"><a href="https://www.facebook.com/explorecharleston" target="_blank">
                                 <div class="bs-icon-sm bs-icon-circle bs-icon-primary bs-icon" style="background: rgb(2,45,85);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
@@ -374,16 +398,55 @@
                             </a></li>
                     </ul>
                 </div>
-                <div class="col d-lg-flex justify-content-lg-center align-items-lg-center" id="foorterCreditsCol"><a class="btn btn-primary" role="button" style="width: 30%;background: rgb(5,45,85);color: white;border-radius: 16px;border-width: 0px;" href="credits.html"><strong>Credits</strong></a></div>
+                <div class="col d-lg-flex justify-content-lg-center align-items-lg-center" id="foorterCreditsCol"><a class="btn btn-primary" role="button" style="width: 30%;background: rgb(5,45,85);color: white;border-radius: 16px;border-width: 0px;" href="/credits.html"><strong>Credits</strong></a></div>
             </div>
         </div>
     </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/hilton-partner.js"></script>
+    <div class="modal fade" role="dialog" tabindex="-1" id="redirect_PlanAMeeting">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-family: 'Abhaya Libre', serif;">You are leaving <strong>VisitCharlestonSC.org</strong></h4><button class="close" type="button" aria-label="Close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>You are about to leave the VisitCharlestonSC.org website. Please note that by clicking the link below, you will be redirected to an external website that is not under our control. We want to remind you that our privacy policy, as outlined at <a href="https://visitcharlestonsc.org/legal/privacy" target="_blank">visitcharlestonsc.org/legal/privacy</a>, does not apply to any content or practices on external sites.<br><br>If you still wish to proceed to the external website, please click the "Continue" button. Otherwise, click "Cancel" to stay on the VisitCharlestonSC.org website.<br><br><strong>Link</strong><br>Name: Official Charleston, SC Meeting Planner<br>URL: https://www.meetcharleston.com</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Cancel</button><a class="btn btn-primary" role="button" style="background: rgb(0,61,126);border-style: none;" href="https://www.meetcharleston.com">Continue</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="redirect_nightlife">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-family: 'Abhaya Libre', serif;">You are leaving <strong>VisitCharlestonSC.org</strong></h4><button class="close" type="button" aria-label="Close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>You are about to leave the VisitCharlestonSC.org website. Please note that by clicking the link below, you will be redirected to an external website that is not under our control. We want to remind you that our privacy policy, as outlined at <a href="https://visitcharlestonsc.org/legal/privacy" target="_blank">visitcharlestonsc.org/legal/privacy</a>, does not apply to any content or practices on external sites.<br><br>If you still wish to proceed to the external website, please click the "Continue" button. Otherwise, click "Cancel" to stay on the VisitCharlestonSC.org website.<br><br><strong>Link</strong><br>Name: Official Charleston Dining Guide<br>URL: https://www.charlestoncvb.com/plan-your-trip/dining-nightlife~124/</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Cancel</button><a class="btn btn-primary" role="button" style="background: rgb(0,61,126);border-style: none;" href="https://www.charlestoncvb.com/plan-your-trip/dining-nightlife~124/">Continue</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="redirect_directions">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-family: 'Abhaya Libre', serif;">You are leaving <strong>VisitCharlestonSC.org</strong></h4><button class="close" type="button" aria-label="Close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>You are about to leave the VisitCharlestonSC.org website. Please note that by clicking the link below, you will be redirected to an external website that is not under our control. We want to remind you that our privacy policy, as outlined at <a href="https://visitcharlestonsc.org/legal/privacy" target="_blank">visitcharlestonsc.org/legal/privacy</a>, does not apply to any content or practices on external sites.<br><br>If you still wish to proceed to the external website, please click the "Continue" button. Otherwise, click "Cancel" to stay on the VisitCharlestonSC.org website.<br><br><strong>Link</strong><br>Name: Google Maps<br>URL: https://goo.gl/maps/JP559RLksF7GtJ1N6</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Cancel</button><a class="btn btn-primary" role="button" style="background: rgb(0,61,126);border-style: none;" href="https://goo.gl/maps/JP559RLksF7GtJ1N6">Continue</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bs-init.js"></script>
+    <script src="/assets/js/hilton-partner.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="assets/js/Simple-Slider.js"></script>
+    <script src="/assets/js/Simple-Slider.js"></script>
 </body>
 
 </html>
